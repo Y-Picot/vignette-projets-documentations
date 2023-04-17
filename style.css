@@ -1,38 +1,57 @@
+/* style.css */
+
 /* Police de caractères personnalisée */
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
-.project-container h2, .project-container .btn-learn-more {
+
+/* Police */
+.project-container h2,
+.project-container .btn-learn-more {
   font-family: 'Montserrat', sans-serif;
-}
-
-/* Règle pour les photos */
-.project-container .project-img {
-    position: relative;
-    overflow: hidden;
-    max-height: 500px;
-}
-
-.project-container .project-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Redimensionne l'image pour qu'elle remplisse complètement son conteneur */
-    transition: all 0.3s ease;
-  }
-
-/* Désactivation de l'effet de box-shadow sur les éléments parent .project-container */
-.project-container {
-  box-shadow: none;
-  border: none;
 }
 
 .project-container article h2 {
   font-size: 28px;
-  margin-bottom: 20px;
-  text-align: center;
+  text-align: left;
 }
 
 .project-container article:last-child h2 {
   font-size: 36px;
   color: #F3541F;
+}
+
+/* Placement */
+
+.content-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-gap: 1rem;
+  align-items: start;
+}
+
+.project-container h2,
+.project-container .btn-learn-more {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.project-container .project-img {
+  position: relative;
+  overflow: hidden;
+  max-height: 500px;
+}
+
+.project-container .project-img img {
+  width: 100%;
+  height: 50vh;
+  /* Utiliser vh pour adapter la hauteur des images */
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+/* Désactivation de l'effet de box-shadow sur les éléments parent .project-container */
+.project-container {
+  box-shadow: none;
+  border: none;
 }
 
 .project-container article:last-child .btn-learn-more {
@@ -46,7 +65,6 @@
   color: #fff;
 }
 
-/* Autres styles inchangés */
 .project-container {
   background-color: #fff;
   padding: 20px;
@@ -63,6 +81,7 @@
   width: calc(50% - 20px);
   margin-bottom: 20px;
   border: 1px solid #ddd;
+
 }
 
 .project-container .project {
@@ -126,71 +145,71 @@
 }
 
 .project-container .btn-learn-more:hover {
-    background-color: #fff;
+  background-color: #fff;
+  color: #F3541F;
+}
+
+.project-container .project:hover .overlay {
+  opacity: 1;
+}
+
+.project-container .project:hover {
+  transform: translateY(-5px);
+}
+
+.project-container .label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #F3541F;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.project-container .label:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  border-top: 10px solid #F3541F;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+
+@media (max-width: 768px) {
+  .project-container {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .project-container article {
+    width: 100%;
+    margin-bottom: 30px;
+    border: none;
+  }
+
+  .project-container .project {
+    margin-bottom: 10px;
+  }
+
+  .project-container .project-img {
+    height: 250px;
+  }
+
+  .project-container article h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+
+  .project-container article:last-child h2 {
+    font-size: 28px;
     color: #F3541F;
   }
-  
-  .project-container .project:hover .overlay {
-    opacity: 1;
+
+  .project-container article:last-child .btn-learn-more {
+    margin-top: 10px;
   }
-  
-  .project-container .project:hover {
-    transform: translateY(-5px);
-  }
-  
-  @media (max-width: 768px) {
-    .project-container {
-      flex-direction: column;
-      padding: 0;
-    }
-  
-    .project-container article {
-      width: 100%;
-      margin-bottom: 30px;
-      border: none;
-    }
-  
-    .project-container .project {
-      margin-bottom: 10px;
-    }
-  
-    .project-container .project-img {
-      height: 250px;
-    }
-  
-    .project-container article h2 {
-      font-size: 24px;
-      margin-bottom: 10px;
-      text-align: left;
-    }
-  
-    .project-container article:last-child h2 {
-      font-size: 28px;
-      color: #F3541F;
-    }
-  
-    .project-container article:last-child .btn-learn-more {
-      margin-top: 10px;
-    }
-  }
-  .project-container .label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #F3541F;
-    color: #fff;
-    padding: 5px 10px;
-    font-size: 14px;
-    text-transform: uppercase;
-  }
-  
-  .project-container .label:after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 0;
-    border-top: 10px solid #F3541F;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-  }
-  
+}
