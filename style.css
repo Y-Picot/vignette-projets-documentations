@@ -7,7 +7,7 @@
 
 /* Le placement des éléments */
 
-body {
+.dernier {
   font-family: 'Montserrat', sans-serif;
   display: flex;
   justify-content: center;
@@ -29,22 +29,6 @@ body {
 .content-cell {
   padding: 0;
   margin: 0;
-}
-
-
-.dernier-main-row {
-  border-collapse: collapse;
-  width: 100%;
-}
-
-.dernier-titles {
-  vertical-align: top;
-}
-
-.dernier-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-
 }
 
 .column-dernier {
@@ -94,10 +78,6 @@ body {
 }
 
 /* Styles */
-.dernier-container {
-  background-color: #fff;
-}
-
 .dernier-overlay {
   opacity: 0;
   transition: opacity 0.2s ease-in-out;
@@ -184,13 +164,6 @@ body {
 /* Media queries pour les écrans plus petits */
 
 @media (max-width: 768px) {
-  .dernier-main-row {
-    flex-direction: column;
-  }
-
-  .dernier-container {
-    width: 100%;
-  }
 
   .column-dernier {
     flex-direction: column;
