@@ -1,92 +1,142 @@
 /* style.css */
 
+/* Dernière documentation et dernier projet */
+
 /* Import de la police de caractères personnalisée */
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
 
-/* Styles pour les polices */
-.main-row {
+/* Le placement des éléments */
+
+body {
+  font-family: 'Montserrat', sans-serif;
   display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
-.project-container h2 {
-  text-align: left;
-  /*margin-bottom: 0;*/
-  font-size: 28px;
+.main-table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-.project-container article:last-child h2 {
-  font-size: 36px;
-  color: #F3541F;
+.title-cell {
+  padding-left: 10px;
 }
 
-/* Styles pour le placement des éléments */
-
-.main-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+.content-cell {
+  padding: 0;
+  margin: 0;
 }
 
-.project-container {
+
+.dernier-main-row {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.dernier-titles {
+  vertical-align: top;
+}
+
+.dernier-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+
+.column-dernier {
+  display: block;
+ 
+}
+.first-column {
+  margin-left: 20px;
+}
+
+.dernier-projet {
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.dernier-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  width: 50%;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
 
+.dernier-overlay h3 {
+  margin-bottom: 10px;
+}
+
+.dernier-overlay p {
+  text-align: center;
+  margin-bottom: 0;
+  padding: 0 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.dernier-projet:hover {
+  transform: translateY(-5px);
+}
+
+/* Styles */
+.dernier-container {
   background-color: #fff;
-  /* padding: 20px; */
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.projects-container {
-  display: flex;
-  gap: 20px;
+.dernier-overlay {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-.project-container article {
-  width: 100%;
-  margin-bottom: 20px;
-  border: 1px solid #ddd;
+.dernier-overlay h3 {
+  color: #fff;
+  font-size: 24px;
 }
 
-.latest {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+.dernier-overlay p {
+  color: #fff;
+  font-size: 16px;
 }
 
-.title-container {
-  display: flex;
-  align-items: flex-start;
+.dernier-projet:hover .dernier-overlay {
+  opacity: 1;
 }
+
 
 /* Styles pour les images des projets */
 
-.project-container .project-img {
+.dernier-img {
   position: relative;
   overflow: hidden;
   max-height: 500px;
 }
 
-.project-container .project-img img {
+.dernier-img img {
   width: 100%;
   height: 50vh;
-  /* Utiliser vh pour adapter la hauteur des images */
   object-fit: cover;
   transition: all 0.3s ease;
 }
 
 /* Styles pour les boutons */
 
-.project-container article:last-child .btn-learn-more {
-  background-color: #fff;
-  color: #F3541F;
-  border: 2px solid #F3541F;
-}
-
-.project-container .btn-learn-more {
+.btn-learn-more {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -103,73 +153,14 @@
   text-transform: uppercase;
 }
 
-.project-container .btn-learn-more:hover {
+.btn-learn-more:hover {
   background-color: #fff;
   color: #F3541F;
 }
 
-/* Styles pour les effets de survol */
-
-.project-container .project {
-  position: relative;
-  width: 100%;
-  display: inline-block;
-  border: none;
-  box-shadow: none;
-  overflow: hidden;
-}
-
-.project-container .project .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: opacity 0.2s ease-in-out;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-.project-container .project .overlay h3 {
-  color: #fff;
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.project-container .project .overlay p {
-  color: #fff;
-  font-size: 16px;
-  text-align: center;
-  margin-bottom: 0;
-  padding: 0 10px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.project-container .project:hover .overlay {
-  opacity: 1;
-}
-
-.project-container .project:hover {
-  transform: translateY(-5px);
-}
-
-/* Styles pour le bouton "En savoir plus" survolé dans le dernier article */
-.project-container article:last-child .btn-learn-more:hover {
-  background-color: #F3541F;
-  color: #fff;
-}
-
 /* Styles pour la balise de label */
 
-.project-container .label {
+.label {
   position: absolute;
   top: 0;
   left: 0;
@@ -180,7 +171,7 @@
   text-transform: uppercase;
 }
 
-.project-container .label:after {
+.label:after {
   content: "";
   position: absolute;
   top: 100%;
@@ -193,44 +184,24 @@
 /* Media queries pour les écrans plus petits */
 
 @media (max-width: 768px) {
-  .main-row {
+  .dernier-main-row {
     flex-direction: column;
   }
 
-  .project-container {
+  .dernier-container {
     width: 100%;
   }
 
-  .project-container article {
-    width: 100%;
-    margin-bottom: 30px;
-    border: none;
+  .column-dernier {
+    flex-direction: column;
+    margin-left: 0;
   }
 
-  .project-container .project {
-    margin-bottom: 10px;
-  }
-
-  .project-container .project-img {
+  .dernier-img {
     height: 250px;
   }
 
-  .project-container article h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    text-align: left;
-  }
-
-  .project-container article:last-child h2 {
-    font-size: 28px;
-    color: #F3541F;
-  }
-
-  .project-container article:last-child .btn-learn-more {
+  .btn-learn-more {
     margin-top: 10px;
-  }
-
-  .projects-container {
-    flex-wrap: wrap;
   }
 }
