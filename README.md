@@ -6,8 +6,8 @@ Cette vitrine offre une interface basique pour mettre en valeur vos réalisation
 
 - **HTML5** - Structure sémantique de la page
 - **CSS3** - Styles avancés avec animations et responsive design
-- **Fonts Google** - Police Montserrat pour une typographie moderne
-- **Layout CSS** - Mise en page flexible avec Grid et Flexbox
+- **Google Fonts** - Police Montserrat pour une typographie moderne
+- **CSS Grid & Flexbox** - Mise en page responsive et flexible
 
 ## 📦 Prérequis
 
