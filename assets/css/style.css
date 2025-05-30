@@ -29,7 +29,9 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
 
 /* Réinitialisation des marges et paddings pour tous les éléments */
-*, ::before, ::after {
+*,
+::before,
+::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -130,7 +132,7 @@
   padding: 1.2svh 2svw;
   font-size: clamp(0.5rem, 2.5vw + 0.5rem, 1rem);
   cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;  
+  transition: background-color 0.3s, color 0.3s;
 }
 
 /* Effet de légère élévation au survol de la vignette */
@@ -172,7 +174,7 @@
 }
 
 /* Espacement du contenu textuel */
-.text-content{
+.text-content {
   margin-top: 1.9%;
 }
 
@@ -251,7 +253,8 @@
 
 /* Écrans moyens : masquage des logos et séparateurs pour simplifier l'interface */
 @media screen and (max-width: 1250px) {
-  .showcase-logo, .separator {
+  .showcase-logo,
+  .separator {
     display: none;
   }
 }
@@ -279,7 +282,7 @@
   }
 
   /* Ajustement du contenu des vignettes */
-  .content-side{
+  .content-side {
     margin-bottom: 1svh;
   }
 
@@ -287,7 +290,7 @@
     margin-bottom: 0;
   }
 
-  .btn-learn-more{
+  .btn-learn-more {
     padding: 1.2svh 2svw;
     margin-left: 5svw;
   }
@@ -303,7 +306,7 @@
     margin-bottom: 1svh;
   }
 
-  .btn-learn-more{
+  .btn-learn-more {
     padding: 1.2svh 1.1svw;
   }
 }
