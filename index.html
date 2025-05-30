@@ -4,155 +4,213 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Vitrine des Projets et Documentations</title>
+    <!-- Lien vers la feuille de style principale -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Favicon pour l'identité visuelle dans les onglets de navigation -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <!-- Meta description pour les moteurs de recherche -->
+    <meta
+      name="description"
+      content="Une vitrine présentant mes derniers projets et documentations techniques."
+    />
   </head>
-
   <body>
-    <!-- Ce fichier HTML constitue la structure principale de la vitrine des projets et documentations -->
-    <!-- Section des derniers projets -->
-    <section class="dernier">
-      <!-- Tableau pour organiser les projets et documentations -->
+    <!--
+      Vitrine des Projets et Documentations
+
+      Ce fichier HTML constitue la structure principale de la vitrine des projets et documentations.
+      L'interface est organisée en deux sections principales :
+      - Une section pour les projets récents
+      - Une section pour les documentations
+
+      Chaque élément est présenté sous forme de vignette avec une image, une description et un lien.
+      Un effet de survol permet d'afficher plus d'informations sur chaque projet ou documentation.
+    -->
+
+    <!--
+      Section des derniers projets
+      Cette section utilise un tableau pour organiser la mise en page des projets.
+      Les projets sont affichés sous forme de vignettes avec des effets de survol.
+    -->
+    <section class="showcase">
+      <!--
+        Structure tabulaire pour l'organisation des projets et documentations
+        Cette structure permet un alignement précis des titres et contenus.
+      -->
       <table class="main-table">
         <tr class="content-row">
+          <!-- Colonne pour le titre de la section avec ancre pour la navigation -->
           <td valign="top" class="title-cell">
-            <h2>Derniers projets</h2>
+            <h2 id="projets">Derniers projets</h2>
           </td>
-          <td valign="top" class="content-cell">
-            <!-- Projet 1 : Site vitrine ChatGPT -->
+          <!-- Colonne pour le contenu des projets -->
+          <td valign="top" class="content-cell">            <!-- Projet 1 : Interface Web Interactive -->
+            <!--
+              Projet 1 : Première colonne avec classe spéciale pour l'alignement
+              Chaque projet est encapsulé dans une structure à plusieurs niveaux pour les effets visuels
+            -->
             <div class="column-dernier first-column">
-              <div class="dernier-projet">
-                <div class="dernier-img">
-                  <img src="/photos/gptPlus.png" alt="Projet 1" />
+              <div class="showcase-item">
+                <!-- Conteneur d'image avec effet de débordement contrôlé -->
+                <div class="showcase-img">
+                  <!-- Image du projet avec chemin relatif vers le dossier d'assets -->
+                  <img src="./assets/images/gpt-plus.png" alt="Projet 1" />
                 </div>
-
-                <div class="dernier-overlay">
+                <!--
+                  Overlay qui apparaît au survol pour montrer les détails du projet
+                  Cette superposition utilise un dégradé pour améliorer la lisibilité du texte sur l'image
+                -->
+                <div class="showcase-overlay">
+                  <!-- Zone de contenu divisée en deux parties : informations et bouton -->
                   <div class="content-side">
-                    <div class="dernier-logo">
+                    <!-- Logo des technologies utilisées -->
+                    <div class="showcase-logo">
                       <img
-                        src="/photos/HTML_CSS_JS_blanc.png"
+                        src="./assets/images/html-css-js-white.png"
                         alt="Logo HTML_CSS_JS"
                       />
                     </div>
-                    <div class="separator"></div>
+                    <!-- Séparateur vertical entre le logo et le texte -->
+                    <div class="separator"></div>                    <!-- Zone de texte avec titre et description -->
                     <div class="text-content">
-                      <h3>ChatGPT : Site vitrine</h3>
+                      <h3>Interface Web Interactive</h3>
                       <p>
-                        Conception de mon site web (html, css et js) avec
-                        ChatGPT
+                        Développement d'une application web moderne utilisant
+                        HTML, CSS et JavaScript
                       </p>
                     </div>
                   </div>
+                  <!-- Zone du bouton "Plus" avec positionnement ajusté -->
                   <div class="btn-side">
-                    <a href="#" class="btn-learn-more">Plus</a>
+                    <!-- Lien vers la page de détail du projet -->
+                    <a href="#project" class="btn-learn-more">Plus</a>
                   </div>
                 </div>
               </div>
             </div>
           </td>
-          <!-- Projet 2 : CRM LinkedIn -->
+          <!-- Projet 2 : Gestionnaire de Relations Client -->
           <td valign="top" class="content-cell">
             <div class="column-dernier">
-              <div class="dernier-projet">
-                <div class="dernier-img">
+              <div class="showcase-item">
+                <div class="showcase-img">
+                  <!-- Image du projet 2 -->
                   <img
-                    src="/photos/linkedIn_crm.png"
+                    src="./assets/images/linkedIn-crm.png"
                     alt="Projet 2 - photo d'un ordinateur avec linkedin écrit par dessus en bleu et blanc"
                   />
                 </div>
 
-                <div class="dernier-overlay">
+                <div class="showcase-overlay">
                   <div class="content-side">
-                    <div class="dernier-logo">
+                    <div class="showcase-logo">
+                      <!-- Logo des technologies utilisées pour le projet 2 -->
                       <img
-                        src="/photos/Python-PNG-File.png"
+                        src="./assets/images/python-logo-classic.png"
                         alt="Logo python"
                       />
                     </div>
-                    <div class="separator"></div>
-                    <div class="text-content">
-                      <h3>Linkedin CRM</h3>
+                    <div class="separator"></div>                    <div class="text-content">
+                      <!-- Description du projet 2 -->
+                      <h3>Gestionnaire de Relations Client</h3>
                       <p>
-                        Automatisation des connexions, envoie de message
-                        personnalisé et plus...
+                        Application Python pour l'automatisation des interactions
+                        professionnelles et la gestion de contacts
                       </p>
                     </div>
                   </div>
+
                   <div class="btn-side">
-                    <a href="#" class="btn-learn-more">Plus</a>
+                    <!-- Bouton pour en savoir plus sur le projet 2 -->
+                    <a href="#projects" class="btn-learn-more">Plus</a>
                   </div>
                 </div>
               </div>
             </div>
           </td>
         </tr>
-        <!-- Section des dernières documentations -->
+        <!-- 
+          Section des dernières documentations 
+          Structure similaire à la section des projets, mais avec un contenu différent
+        -->
         <tr class="content-row">
-          <td valign="top" class="title-cell ">
-            <h2>Dernières documentations</h2>
+          <td valign="top" class="title-cell">
+            <!-- Titre avec ancre pour la navigation interne -->
+            <h2 id="documentations">Dernières documentations</h2>
           </td>
           <td valign="top" class="content-cell">
-            <!-- Documentation 1 : Reverse Engineering -->
+            <!-- Documentation 1 : Décompilation de Fichiers Java -->
             <div class="column-dernier first-column">
-              <div class="dernier-projet">
-                <div class="dernier-img">
+              <div class="showcase-item">
+                <div class="showcase-img">
+                  <!-- Image de la documentation 1 -->
                   <img
-                    src="/photos/reverse_engineering.png"
+                    src="./assets/images/reverse-engineering.png"
                     alt="Documentation 1"
                   />
                 </div>
 
-                <div class="dernier-overlay">
+                <div class="showcase-overlay">
                   <div class="content-side">
-                    <div class="dernier-logo">
+                    <div class="showcase-logo">
+                      <!-- Logo des technologies utilisées pour la documentation 1 -->
                       <img
-                        src="/photos/Java_logo_PNG3.png"
+                        src="./assets/images/java-logo-white.png"
                         alt="Logo java"
                       />
                     </div>
-                    <div class="separator"></div>
-                    <div class="text-content">
-                      <h3>JAR to Source code</h3>
+                    <div class="separator"></div>                    <div class="text-content">
+                      <!-- Description de la documentation 1 -->
+                      <h3>Décompilation de Fichiers Java</h3>
                       <p>
-                        Apprendre comment reprendre les sources à partir d'un
-                        fichier compilé (JAR)
+                        Guide pratique pour extraire et analyser le code source
+                        depuis des archives compilées
                       </p>
                     </div>
                   </div>
+
                   <div class="btn-side">
-                    <a href="#" class="btn-learn-more">Plus</a>
+                    <!-- Bouton pour en savoir plus sur la documentation 1 -->
+                    <a href="#documentations" class="btn-learn-more">Plus</a>
                   </div>
                 </div>
               </div>
             </div>
           </td>
-          <!-- Documentation 2 : Pom.xml généré par Python -->
+          <!-- Documentation 2 : Générateur de Configuration Maven -->
           <td valign="top" class="content-cell">
             <div class="column-dernier">
-              <div class="dernier-projet">
-                <div class="dernier-img">
-                  <img src="/photos/pom_python.png" alt="Documentation 2" />
+              <div class="showcase-item">
+                <div class="showcase-img">
+                  <!-- Image de la documentation 2 -->
+                  <img
+                    src="./assets/images/pom-to-python.png"
+                    alt="Documentation 2"
+                  />
                 </div>
 
-                <div class="dernier-overlay">
+                <div class="showcase-overlay">
                   <div class="content-side">
-                    <div class="dernier-logo">
+                    <div class="showcase-logo">
+                      <!-- Logo des technologies utilisées pour la documentation 2 -->
                       <img
-                        src="/photos/Python-PNG-File.png"
+                        src="./assets/images/python-logo-classic.png"
                         alt="Logo python"
                       />
                     </div>
-                    <div class="separator"></div>
-                    <div class="text-content">
-                      <h3>Pom.xml Maven généré par Python</h3>
+                    <div class="separator"></div>                    <div class="text-content">
+                      <!-- Description de la documentation 2 -->
+                      <h3>Générateur de Configuration Maven</h3>
                       <p>
-                        Plus besoin de créer votre pom.xml. données
-                        l'emplacement de vos librairies et...
+                        Script Python automatisant la création de fichiers de
+                        configuration pour projets Java
                       </p>
                     </div>
                   </div>
                   <div class="btn-side">
-                    <a href="#" class="btn-learn-more">Plus</a>
+                    <!-- Bouton pour en savoir plus sur la documentation 2 -->
+                    <a href="#documentations" class="btn-learn-more">Plus</a>
                   </div>
                 </div>
               </div>
