@@ -37,13 +37,14 @@
 
 /* 
  * Section principale contenant les projets et documentations 
- * (anciennement .dernier)
+ * Utilise Flexbox pour centrer le contenu horizontalement et 
+ * s'adapte à la hauteur complète de l'écran (100svh = 100% viewport height)
  */
 .showcase {
   font-family: "Montserrat", sans-serif;
   display: flex;
-  justify-content: center;
-  min-height: 100svh;
+  justify-content: center; /* Centre le contenu horizontalement */
+  min-height: 100svh; /* Hauteur minimale = hauteur de l'écran */
   margin: 0;
   padding: 0;
 }
