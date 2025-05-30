@@ -1,10 +1,6 @@
 # Vitrine de Projets et Documentations
 
-Une vitrine web moderne et responsive pour présenter des projets de développement et des documentations techniques sous forme de vignettes interactives.
-
-## 📋 Description
-
-Cette vitrine offre une interface élégante pour mettre en valeur vos réalisations techniques. Elle présente les projets et documentations sous forme de vignettes avec des effets de survol révélant les détails et technologies utilisées.
+Cette vitrine offre une interface basique pour mettre en valeur vos réalisations techniques. Elle présente les projets et documentations sous forme de vignettes avec des effets de survol révélant les détails et technologies utilisées.
 
 ## 🚀 Technologies utilisées
 
@@ -53,10 +49,9 @@ Chaque vignette contient :
 
 ## 🎨 Fonctionnalités
 
-- **Design responsive** - S'adapte à tous les écrans (mobile, tablette, desktop)
+- **Design responsive** - S'adapte à tous les écrans mais il faut souvent revoir certains problème visuel selon vos images et logos
 - **Effets de survol** - Révèle les informations au passage de la souris
-- **Animation fluide** - Transitions CSS pour une expérience utilisateur agréable
-- **Navigation intuitive** - Organisation claire en sections projets/documentations
+- **Animation** - Transitions très light
 - **Performance optimisée** - Code léger et chargement rapide
 
 ## 📁 Structure du projet
