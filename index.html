@@ -17,21 +17,44 @@
   </head>
   <body>
     <!--
-      Vitrine des Projets et Documentations
+      ╔══════════════════════════════════════════════════════════════╗
+      ║                  VITRINE DES PROJETS                         ║
+      ║                 Développé par Y-Picot                        ║
+      ╚══════════════════════════════════════════════════════════════╝
 
-      Ce fichier HTML constitue la structure principale de la vitrine des projets et documentations.
-      L'interface est organisée en deux sections principales :
-      - Une section pour les projets récents
-      - Une section pour les documentations
+      DESCRIPTION :
+      Interface web présentant une collection de projets et documentations
+      techniques sous forme de vignettes interactives.
 
-      Chaque élément est présenté sous forme de vignette avec une image, une description et un lien.
-      Un effet de survol permet d'afficher plus d'informations sur chaque projet ou documentation.
+      FONCTIONNALITÉS :
+      • Affichage responsive adapté à tous les écrans
+      • Effets de survol avec superpositions informatives  
+      • Navigation fluide entre projets et documentations
+      • Design moderne avec animations CSS
+
+      SECTIONS :
+      1. Projets récents - Présentation des dernières réalisations
+      2. Documentations - Guides et tutoriels techniques
+
+      TECHNOLOGIES :
+      HTML5, CSS3 avec Flexbox/Grid, animations CSS
     -->
-
     <!--
-      Section des derniers projets
-      Cette section utilise un tableau pour organiser la mise en page des projets.
-      Les projets sont affichés sous forme de vignettes avec des effets de survol.
+      SECTION PROJETS
+      ════════════════════════════════════════════════════════════════
+
+      Cette section présente les projets récents sous forme de vignettes interactives.
+
+      STRUCTURE :
+      • Table pour l'organisation en grille responsive
+      • Titres de section avec ancres de navigation
+      • Vignettes avec images et overlays informatifs
+      • Effets de transition au survol
+
+      ACCESSIBILITÉ :
+      • Balises alt descriptives pour les images
+      • Structure sémantique avec headers appropriés
+      • Navigation clavier possible via les liens
     -->
     <section class="showcase">
       <!--
@@ -45,10 +68,11 @@
             <h2 id="projets">Derniers projets</h2>
           </td>
           <!-- Colonne pour le contenu des projets -->
-          <td valign="top" class="content-cell">            <!-- Projet 1 : Interface Web Interactive -->
+          <td valign="top" class="content-cell">
+            <!-- Projet 1 : Application Web Dynamique -->
             <!--
-              Projet 1 : Première colonne avec classe spéciale pour l'alignement
-              Chaque projet est encapsulé dans une structure à plusieurs niveaux pour les effets visuels
+              Première vignette de projet avec classe d'alignement spéciale
+              Structure en couches pour permettre les effets visuels au survol
             -->
             <div class="column-dernier first-column">
               <div class="showcase-item">
@@ -72,7 +96,8 @@
                       />
                     </div>
                     <!-- Séparateur vertical entre le logo et le texte -->
-                    <div class="separator"></div>                    <!-- Zone de texte avec titre et description -->
+                    <div class="separator"></div>
+                    <!-- Zone de texte avec titre et description -->
                     <div class="text-content">
                       <h3>Interface Web Interactive</h3>
                       <p>
@@ -111,12 +136,13 @@
                         alt="Logo python"
                       />
                     </div>
-                    <div class="separator"></div>                    <div class="text-content">
+                    <div class="separator"></div>
+                    <div class="text-content">
                       <!-- Description du projet 2 -->
                       <h3>Gestionnaire de Relations Client</h3>
                       <p>
-                        Application Python pour l'automatisation des interactions
-                        professionnelles et la gestion de contacts
+                        Application Python pour l'automatisation des
+                        interactions professionnelles et la gestion de contacts
                       </p>
                     </div>
                   </div>
@@ -131,8 +157,16 @@
           </td>
         </tr>
         <!-- 
-          Section des dernières documentations 
-          Structure similaire à la section des projets, mais avec un contenu différent
+          SECTION DOCUMENTATIONS
+          ════════════════════════════════════════════════════════════════
+          
+          Cette section présente les documentations techniques récentes.
+          Structure similaire à la section des projets, mais avec un contenu différent.
+          
+          CONTENU :
+          • Guides techniques et tutoriels
+          • Documentation d'outils et scripts
+          • Procédures de déploiement et configuration
         -->
         <tr class="content-row">
           <td valign="top" class="title-cell">
@@ -160,7 +194,8 @@
                         alt="Logo java"
                       />
                     </div>
-                    <div class="separator"></div>                    <div class="text-content">
+                    <div class="separator"></div>
+                    <div class="text-content">
                       <!-- Description de la documentation 1 -->
                       <h3>Décompilation de Fichiers Java</h3>
                       <p>
@@ -199,7 +234,8 @@
                         alt="Logo python"
                       />
                     </div>
-                    <div class="separator"></div>                    <div class="text-content">
+                    <div class="separator"></div>
+                    <div class="text-content">
                       <!-- Description de la documentation 2 -->
                       <h3>Générateur de Configuration Maven</h3>
                       <p>

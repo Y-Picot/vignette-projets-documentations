@@ -1,17 +1,28 @@
 /* style.css */
 
 /**
- * Feuille de style pour la Vitrine des Projets et Documentations
+ * ╔════════════════════════════════════════════════════════════════╗
+ * ║          VITRINE DES PROJETS ET DOCUMENTATIONS                ║
+ * ║                   Feuille de Style CSS                        ║
+ * ║                  Développé par Y-Picot                        ║
+ * ╚════════════════════════════════════════════════════════════════╝
  *
  * Ce fichier CSS gère l'apparence visuelle et les animations de la vitrine.
  * Il implémente un design responsive qui s'adapte à différentes tailles d'écran,
  * et utilise des effets de transition pour améliorer l'expérience utilisateur.
  *
- * Structure principale :
- * - Mise en page générale et grille
- * - Styles des vignettes de projets et documentations
- * - Effets de survol et animations
- * - Media queries pour la responsivité
+ * ORGANISATION DU CODE :
+ * 1. Réinitialisation et configuration de base
+ * 2. Mise en page générale et structure de grille
+ * 3. Styles des vignettes de projets et documentations
+ * 4. Effets de survol et animations
+ * 5. Media queries pour la responsivité mobile
+ *
+ * TECHNIQUES UTILISÉES :
+ * • CSS Grid et Flexbox pour la mise en page
+ * • Transitions CSS pour les animations fluides
+ * • Media queries pour l'adaptation responsive
+ * • Variables CSS personnalisées (clamp) pour la typographie
  */
 
 /* Importation de la police de caractères personnalisée */
